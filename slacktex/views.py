@@ -38,4 +38,5 @@ def index():
 
     slack.post_latex_to_webhook(payload)
 
-    return "Success!", 200
+    return "", 200
+    # return "Success!", 200
