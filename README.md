@@ -72,7 +72,7 @@ Please follow the steps below to deploy this project.
 
 20. Enjoy using SlackTeX on your Slack!
 
-## Minor reminders
+### Minor reminders
 
 If you use a free account to run your Heroku app, it will sleep after 30 minutes of inactiveness. When your app is sleeping, you can still use the command as usual but there would be a delay of approximately 9 seconds. This delay would occur only once when your app transition from the sleeping state to the awake state.
 
