@@ -2,7 +2,7 @@
 
 ## Disclaimer
 
-The repository and the documentation come **without any warranty**, to the extent permitted by applicable law. For example, it is not guaranteed that the program will function normally or as expected and it is not guaranteed that if you follow the guidelines below correctly, you will have the program function normally or expected.
+The repository and the documentation come **without any warranty**, to the extent permitted by applicable law. For example, it is not guaranteed that the program will function normally or as expected and it is not guaranteed that if you follow the guidelines below correctly, you will have the program function normally or as expected.
 
 Please be advised that you agree to use this repository and this documentation **at your own risk** if you decide to use them.
 
