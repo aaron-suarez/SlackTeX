@@ -76,4 +76,12 @@ Please follow the steps below to deploy this project.
 
 If you use a free account to run your Heroku app, it will sleep after 30 minutes of inactiveness. When your app is sleeping, you can still use the command as usual but there would be a delay of approximately 9 seconds. This delay would occur only once when your app transition from the sleeping state to the awake state.
 
+## Development
+
+This part might be more useful for those interested in further development of this project.
+
+The major part of the code resides in `SlackTeX/slacktex/views.py`. This Python script fine contains one function called `index`. The variable `latex`  is the LaTeX formula that the user inputs.
+
+This project renders LaTeX formulas via [Google Chart API](https://developers.google.com/chart/infographics/docs/formulas). The variable `latex_url` is a concatenation of Google Chart address and the LaTeX formula, which is a link that will bring you to an image. You can replace Google Chart API by other LaTeX rendering services.
+
 
