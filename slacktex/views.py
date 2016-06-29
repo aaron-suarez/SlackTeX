@@ -26,7 +26,7 @@ def index():
     if token != slack.SLASH_COMMAND_TOKEN:
         return "Unauthorized."
 
-    latex = quote(latex)
+    latex = quote(latex.encode("utf-8"))
     latex_url = "http://chart.apis.google.com/chart?cht=tx&chl={latex}".format(latex=latex)
 
     payload = {"channel": channel_id}
