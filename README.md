@@ -82,6 +82,6 @@ This part might be more useful for those interested in further development of th
 
 The major part of the code resides in `SlackTeX/slacktex/views.py`. This Python script fine contains one function called `index`. The variable `latex`  is the LaTeX formula that the user inputs.
 
-This project renders LaTeX formulas via [Google Chart API](https://developers.google.com/chart/infographics/docs/formulas). The variable `latex_url` is a concatenation of Google Chart address and the LaTeX formula, which is a link that will bring you to an image. You can replace Google Chart API by other LaTeX rendering services.
+This project renders LaTeX formulas via [Google Chart API](https://developers.google.com/chart/infographics/docs/formulas). The variable `latex_url` is a concatenation of Google Chart address and the LaTeX formula, which is a link that will bring you to an image. You can replace Google Chart API by other LaTeX rendering services (see [this page](http://stackoverflow.com/questions/516406/latex-equivalent-to-google-chart-api)).
 
 
