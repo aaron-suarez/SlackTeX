@@ -26,6 +26,15 @@ def index():
     if token != slack.SLASH_COMMAND_TOKEN:
         return "Unauthorized."
 
+    asciify = {
+        u'\u201c': '"',
+        u'\u201d': '"',
+        u'\u2018': "'",
+        u'\u2019': "'",
+        u'\u2026': "...",
+    }
+    for unicodeChar, asciiReplacement in asciify.iteritems():
+        latex = latex.replace(unicodeChar, asciiReplacement)
     latex = quote(latex.encode("utf-8"))
     latex_url = "http://chart.apis.google.com/chart?cht=tx&chl={latex}".format(latex=latex)
 
