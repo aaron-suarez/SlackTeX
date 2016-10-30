@@ -38,7 +38,7 @@ def index():
     latex = quote(latex.encode("utf-8"))
     latex_url = "http://chart.apis.google.com/chart?cht=tx&chl={latex}".format(latex=latex)
 
-    payload = {"channel": channel_id}
+    payload = {"channel": channel_id, "text": latex}
     user = slack.find_user_info(user_id)
     payload.update(user)
 
