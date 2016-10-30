@@ -1,7 +1,6 @@
 from flask import Flask, request
 from models import Slack
-from urllib import quote
-
+from urllib import quote, unquote_plus
 
 app = Flask(__name__)
 
@@ -38,7 +37,7 @@ def index():
     latex = quote(latex.encode("utf-8"))
     latex_url = "http://chart.apis.google.com/chart?cht=tx&chl={latex}".format(latex=latex)
 
-    payload = {"channel": channel_id, "text": latex}
+    payload = {"channel": channel_id, "text": unquote_plus(latex)}
     user = slack.find_user_info(user_id)
     payload.update(user)
 
