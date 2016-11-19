@@ -35,7 +35,7 @@ def index():
     for unicodeChar, asciiReplacement in asciify.iteritems():
         latex = latex.replace(unicodeChar, asciiReplacement)
     latex = quote(latex.encode("utf-8"))
-    latex_url = "http://chart.apis.google.com/chart?cht=tx&chs=500&chl={latex}".format(latex=latex)
+    latex_url = "http://chart.apis.google.com/chart?cht=tx&chs=tx&chl={latex}".format(latex=latex)
 
     payload = {"channel": channel_id, "text": unquote_plus(latex)}
     user = slack.find_user_info(user_id)
