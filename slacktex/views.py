@@ -5,22 +5,22 @@ from urllib import quote, unquote_plus
 app = Flask(__name__)
 
 
-@app.route("/")
+@app.route("/", methods=['POST'])
 def index():
-    if not request.args:
+    if not request.form:
         message = """
         Welcome to SlackTeX!
-        Check me out on <a href="https://github.com/nicolewhite/slacktex">GitHub</a>.
+        Check me out on <a href="https://github.com/aaron-suarez/slacktex">GitHub</a>.
         """
 
         return message
 
     slack = Slack()
 
-    token = request.args["token"]
-    latex = request.args["text"]
-    channel_id = request.args["channel_id"]
-    user_id = request.args["user_id"]
+    token = request.form["token"]
+    latex = request.form["text"]
+    channel_id = request.form["channel_id"]
+    user_id = request.form["user_id"]
 
     if token != slack.SLASH_COMMAND_TOKEN:
         return "Unauthorized."
