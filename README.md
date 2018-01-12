@@ -54,7 +54,7 @@ Please follow the steps below to deploy this project.
 
 11. Generate a Webhook URL and the config var SLACK_WEBHOOK_URL should be set to this Webhook URL.
 
-12. After you finishe other configration items on this page, click *Save Settings*.
+12. After you finish other configration items on this page, click *Save Settings*.
 
 13. Go back to the page `https://yourslackteam.slack.com/apps` and find the app *Slash Commands* via the search box. Click *Add Configuration* button. This will bring your to another configuration page.
 
@@ -62,15 +62,13 @@ Please follow the steps below to deploy this project.
 
 15. In the *URL* box, put `https://yourherokuappname.herokuapp.com`.
 
-16. In the *Method* box, choose *GET*.
+16. In the *Token* box, click *generate* to generate a token. The config var SLACK_SLASH_COMMAND_TOKEN should be set to this token.
 
-17. In the *Token* box, click *generate* to generate a token. The config var SLACK_SLASH_COMMAND_TOKEN should be set to this token.
+17. After you finish other configration items on this page, click *Save Integration*.
 
-18. After you finish other configration items on this page, click *Save Integration*.
+18. Doublecheck the three config vars on the Heroku dashborad and make sure that they are set correctly.
 
-19. Doublecheck the three config vars on the Heroku dashborad and make sure that they are set correctly.
-
-20. Enjoy using SlackTeX on your Slack!
+19. Enjoy using SlackTeX on your Slack!
 
 ### Minor reminders
 
